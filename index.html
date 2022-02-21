@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Change The Background Color</title>
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Custom CSS -->
+		<link rel="stylesheet" href="style.css" />
+        <!-- JS -->
+		<script src="./app.js" defer></script>
+	</head>
+	<body>
+		<div class="container" id="root">
+            <div class="inputGroup">
+                <div class="rgbInput">
+                    <input type="text" id="colorCodeRGB" readonly>
+                    <i id="rgb-copy-btn" onclick="copyText('colorCodeRGB')" class="fa-solid fa-copy"></i>
+                </div>
+                <div class="hexaInput">
+                    <input type="text" id="colorCodeHEX" readonly>
+                    <i id="hexa-copy-btn" onclick="copyText('colorCodeHEX')" class="fa-solid fa-copy"></i>
+                </div>
+            </div>
+			<h1> <span class="type-animation-header"></span> </h1>
+			<button id="change-btn">Change Color</button>
+		</div>
+		<!-- Type JS cdn -->
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+	</body>
+</html>
